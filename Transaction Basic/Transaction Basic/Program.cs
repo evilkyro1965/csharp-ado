@@ -20,10 +20,10 @@ namespace Transaction_Basic
                 {
                     conn.Open();
 
-                    SqlCommand cmd = new SqlCommand("INSERT INTO WebSites([URL],[WebDesc]) VALUES ('test','test')", conn);
+                    SqlCommand cmd = new SqlCommand("INSERT INTO Customers([ContactName],[CompanyName]) VALUES ('test','test')", conn);
                     cmd.ExecuteNonQuery();
 
-                    SqlCommand cmd2 = new SqlCommand("INSERT INTO WebSites([URL],[WebDesc]) VALUES ('test','test')", conn);
+                    SqlCommand cmd2 = new SqlCommand("INSERT INTO Customers([ContactName],[CompanyName]) VALUES ('test','test')", conn);
                     cmd2.ExecuteNonQuery();
                     conn.Close();
                 }

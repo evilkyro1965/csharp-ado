@@ -13,7 +13,7 @@ namespace Connection
         {
             string connetionString = null;
             SqlConnection cnn ;
-            connetionString = "Server=KYRO\\SQLEXPRESS;Database=qa;User ID=sa;Password=drowssap";
+            connetionString = "Server=localhost\\SQLEXPRESS;Database=ado_test;User ID=sa;Password=12345";
             cnn = new SqlConnection(connetionString);
             try
             {
